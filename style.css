@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Prata&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #0a0a0b;
+}
+
+:root {
+  --font-size: 16px;
+}
+
+.container {
+}
+
+nav,
+section,
+footer {
+  padding: 30px 14rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Prata", serif;
+  color: white;
+  margin-bottom: 7rem;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  font-family: "Inter", sans-serif;
+  color: #666666;
+  font-weight: 400;
+  font-size: 1.0625em;
+  margin-right: 20px;
+}
+
+button {
+  background-color: #fbe850;
+  border: none;
+  padding: 20px 20px;
+  font-family: "Prata", serif;
+  font-size: 1.1875em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Prata", serif;
+  color: white;
+  font-weight: normal;
+  letter-spacing: -2px;
+}
+
+h1 {
+  font-size: 3.563rem;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 50px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+}
+
+section {
+  margin-bottom: 6rem;
+}
+
+section .content {
+  max-width: 95%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+section p {
+  max-width: 98%;
+  line-height: 28px;
+  color: #767677;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+}
+
+section#social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section#social-media img {
+  margin-right: 100px;
+  width: 110px;
+}
+
+section#services {
+  display: flex;
+  justify-content: space-around;
+}
+section#services img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+figcaption {
+  max-width: 90%;
+}
+
+section#no-padding {
+  padding: 80px 14rem;
+  background-color: #2e3038;
+  width: 100%;
+  min-height: 40vh;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section#contact-me {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+}
+
+section#contact-me p {
+  max-width: 95%;
+}
+
+footer {
+  background-color: #2e3038;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  margin-right: 5px;
+}
+
+/** Responsive Design **/
+
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  nav,
+  section,
+  footer {
+    padding: 30px 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #grid {
+    display: flex;
+  }
+
+  section#no-padding {
+    padding: 80px 2rem;
+    display: flex;
+    min-height: auto;
+  }
+
+  section#social-media {
+    display: grid;
+    grid-template-columns: 0.7fr auto;
+    gap: 10px;
+    width: 100%;
+  }
+
+  section#social-media img {
+    width: 60px;
+  }
+
+  section {
+    flex-direction: column;
+  }
+}
